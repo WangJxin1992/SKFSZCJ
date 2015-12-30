@@ -1,0 +1,27 @@
+//
+//  SKFZSCJ-Prefix.pch
+//  SKFZSCJ
+//
+//  Created by qianfeng007 on 15/7/26.
+//  Copyright (c) 2015年 孙凯峰. All rights reserved.
+//
+
+#ifndef SKFZSCJ_SKFZSCJ_Prefix_pch
+#define SKFZSCJ_SKFZSCJ_Prefix_pch
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+//放在预编译文件 这样其他文件就不用导入了
+#import "Defines.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#endif
+#endif
